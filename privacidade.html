@@ -58,11 +58,13 @@
 <ul>
   <li><strong>Google:</strong> login com a conta Google, backup no Google Drive e leitura de texto (ML Kit, executado no aparelho).</li>
   <li><strong>Microsoft:</strong> login com a conta Microsoft e backup no OneDrive.</li>
+  <li><strong>Cloudflare (apenas no app para Windows):</strong> ao entrar com a conta Google, o código de autorização do login passa por um serviço do Cloudflare Workers, que guarda a chave do aplicativo e a troca pelo acesso ao seu Google Drive. Esse serviço não armazena esses dados e não recebe suas despesas, comprovantes nem backups.</li>
 </ul>
 <p>Cada serviço segue a própria política de privacidade.</p>
 
 <h2>6. Permissões do aparelho</h2>
-<p>O app pede acesso à <strong>câmera</strong> só quando você vai fotografar uma nota. Os arquivos que você escolhe da galeria ou do celular são lidos apenas no momento da escolha.</p>
+<p>No <strong>Android</strong>, o app pede acesso à <strong>câmera</strong> só quando você vai fotografar uma nota. Os arquivos que você escolhe da galeria ou do celular são lidos apenas no momento da escolha.</p>
+<p>No <strong>Windows</strong>, o app <strong>não usa a câmera</strong>: você importa a nota escolhendo um arquivo (imagem ou PDF) ou lança a despesa manualmente. Os arquivos são lidos apenas no momento da escolha.</p>
 
 <h2>7. Por quanto tempo os dados ficam guardados</h2>
 <p>Os dados ficam enquanto a conta existir no aparelho. Você pode excluir despesas a qualquer momento, ou excluir a conta inteira.</p>
@@ -70,7 +72,8 @@
 
 <h2>8. Como excluir seus dados</h2>
 <div class="caixa">
-  <p>No app: <strong>Configurações → Excluir conta</strong>. Isso apaga as despesas, os comprovantes, os blocos, a conta, o backup na nuvem e as cópias que o app fez na galeria do celular. Não dá para desfazer.</p>
+  <p><strong>No Android:</strong> <strong>Configurações → Excluir conta</strong>. Isso apaga as despesas, os comprovantes, os blocos, a conta, o backup na nuvem e as cópias que o app fez na galeria do celular. Não dá para desfazer.</p>
+  <p><strong>No Windows:</strong> <strong>Perfil → Excluir conta</strong> abre a página <a href="excluir-conta-windows.html">Como excluir sua conta no Windows</a>, com o passo a passo para apagar os dados do computador (desinstalando o app) e o backup na sua conta Google ou Microsoft. Não dá para desfazer.</p>
   <p>Veja também a página <a href="excluir-conta.html">Como excluir sua conta</a>.</p>
 </div>
 
